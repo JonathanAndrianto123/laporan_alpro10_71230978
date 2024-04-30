@@ -3,12 +3,12 @@ with open ("file.txt","r") as file :
     konten_pisah = konten.split(".")
     unik = []
 
-    for kat in konten_pisah :
-        kata = kat.strip().split()
-        for k in kata :
-            k = k.strip("!@#$%^&*.,?/';:()").lower()
-            if k not in unik :
-                unik.append(k)
+    for x in konten_pisah :
+        kata = x.strip().split()
+        for y in kata :
+            y = y.strip("!@#$%^&*.,?/';:()").lower()
+            if y not in unik :
+                unik.append(y)
 
 print("=============ISI BERITA==============")
 print(konten)
